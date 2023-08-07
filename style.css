@@ -1,0 +1,97 @@
+body {
+  font-family: 'Space Grotesk', sans-serif;
+  margin: auto;
+  box-sizing: border-box;
+  background-image: url(images/image1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.sidebar{
+  height: 100vh;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #aaa;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: ;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #eee;
+  color: black;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+.send {
+  padding: 12rem 2rem 4rem 26rem; 
+  position: relative;
+}
+
+.send input {
+  width: 47rem;
+  height: 4rem;
+  background: #fcfcfc;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  box-shadow: 0 0 3px #ccc, 0 10px 15px #ebebeb inset;
+  text-indent: 32px;
+}
+
+.send .fa-paper-plane {
+  position: absolute;
+  top: 20.2rem;
+  left: 71rem;
+  font-size: 1.3rem;
+  color: #ccc;
+}
+
+.fa-paper-plane:hover {
+    color: #aaa;
+}
+
+.send h2 {
+  font-size: 2.3rem;
+  color: #fff;
+  padding-left: 19rem;
+}

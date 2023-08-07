@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- google fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- icon -->
+
+    <script
+      src="https://kit.fontawesome.com/1f1a45f7a5.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <sidebar id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
+      <button class="button1"><a href="#main"><i class="fa-solid fa-plus"></i> New Text</a></button>
+      <button class="button2"><a href="#">Log out</a></button>
+    </sidebar>
+    <main id="main">
+      <button class="openbtn" onclick="openNav()">☰  Sidebar</button>
+      <div class="send">
+        <h2>Pro-Gpt</h2>
+        <a href="#"><span class="fa-solid fa-paper-plane"></span></a>
+        <input type="text" placeholder="Type in prompt" />
+      </div>
+    </main>
+
+    <footer class="footer"></footer>
+  </body>
+  <script>
+    function openNav() {
+      document.getElementById("mySidebar").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidebar").style.width = "0";
+      document.getElementById("main").style.marginLeft= "0";
+    }
+    </script>
+</html>
